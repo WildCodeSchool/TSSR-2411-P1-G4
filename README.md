@@ -31,7 +31,7 @@ Tester la vulnérabilité d'un mot de passe de fichier zippé chiffré sur un se
 * **Analyse des résultats :** Évaluer la sécurité des comptes locaux en fonction des résultats de l'attaque.
 
   # Team
-  * Maxime
-  * Adel
-  * Ismail
-  * Xavier
+  * Maxime Scrum Master
+  * Adel Members
+  * Ismail members
+  * Xavier Product Owner
