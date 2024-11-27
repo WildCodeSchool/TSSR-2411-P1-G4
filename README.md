@@ -1,7 +1,9 @@
 # TSSR-2411-P1-G4
+![image](https://github.com/user-attachments/assets/2db2c224-2580-4ddd-971b-ec89129633b4)
 
 
-# Présentation du Projet : Attaque par Dictionnaire sur Mot de Passe
+# Présentation du Projet : Attaque par Dictionnaire sur Mot de Passe 
+
 
 ## Objectif
 
@@ -31,7 +33,7 @@ Tester la vulnérabilité d'un mot de passe de fichier zippé chiffré sur un se
 * **Analyse des résultats :** Évaluer la sécurité des comptes locaux en fonction des résultats de l'attaque.
 
   # Team
-  * Maxime Scrum Master
-  * Adel Members
-  * Ismail members
-  * Xavier Product Owner
+  * Maxime  : Scrum Master
+  * Adel : Members 
+  * Ismail  : Members 
+  * Xavier : Product Owner 
