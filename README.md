@@ -27,9 +27,9 @@ Tester la vulnérabilité d'un mot de passe de fichier zippé chiffré sur un se
 * **Lancement de l'attaque :** Exécuter John the Ripper ou Hashcat en spécifiant le hachage, le type de hachage et le dictionnaire.
 * **Analyse des résultats :** Examiner les résultats de l'attaque pour déterminer si le mot de passe a été craqué.
 
-## Étape 3 : Attaque sur un Compte Local du Serveur
+## Étape 3 : Attaque sur un Compte Local du Serveur(bonus)
 
-* **Récupération des hashes :** Utiliser des outils comme `samdump2` pour extraire les hashes des comptes locaux du serveur.
+* **Récupération des hashes :** Utiliser des outils  pour extraire les hashes des comptes locaux du serveur.
 * **Lancement de l'attaque :** Exécuter John the Ripper ou Hashcat avec les hashes extraits et le dictionnaire.
 * **Analyse des résultats :** Évaluer la sécurité des comptes locaux en fonction des résultats de l'attaque.
 
