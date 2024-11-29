@@ -1,3 +1,4 @@
+
 # TSSR-2411-P1-G4
 ![image](https://github.com/user-attachments/assets/2db2c224-2580-4ddd-971b-ec89129633b4)
 
@@ -32,8 +33,34 @@ Tester la vulnérabilité d'un mot de passe de fichier zippé chiffré sur un se
 * **Lancement de l'attaque :** Exécuter John the Ripper ou Hashcat avec les hashes extraits et le dictionnaire.
 * **Analyse des résultats :** Évaluer la sécurité des comptes locaux en fonction des résultats de l'attaque.
 
-  # Team
-  * Maxime  : Scrum Master
-  * Adel : Members 
-  * Ismail  : Members 
-  * Xavier : Product Owner 
+ 
+
+# Équipe du Projet
+
+- 🏆 **Maxime** : *Scrum Master*
+  - Responsable de la mise en place de la méthode Scrum
+  - Coordination des étapes de test et d'installation des systèmes
+
+- 🛠️ **Adel** : *Membre de l'équipe*
+  - Mise en application pratique
+  - Réalisation des tests et des installations
+
+- 🔧 **Ismail** : *Membre de l'équipe*
+  - Mise en application des processus d'installation
+  - Support technique pour les procédures d'implémentation
+
+- 📋 **Xavier** : *Product Owner*
+  - Rédaction de la documentation technique
+  - Mise en forme et structuration des documents de test systèmes
+
+
+Semaine 1
+
+| Difficultés | Solutions |
+|------------|-----------|
+| Installation de la VM Ubuntu bloquée | Augmenter la mémoire vive (RAM) dans les options de configuration de la machine virtuelle |
+| Installation de Windows Server difficile | - Rechercher et utiliser des documentations et tutoriels détaillés<br>- Formation et acquisition de connaissances préalables<br>- Pratique et tests multiples |
+| Installation de John the Ripper | - Acquisition de connaissances sur le logiciel<br>- Étude des procédures d'installation<br>- Tests de plusieurs méthodes d'installation<br>- Consultation de documentation technique |
+| Partage de fichiers entre un client Linux et un serveur Windows | - Recherche de documentation sur les procédures de partage<br>- Étude des protocoles de transfert de fichiers<br>- Tests et configuration des paramètres de partage |
+
+Ce tableau récapitule les principales difficultés rencontrées lors du projet et propose des solutions concrètes pour les surmonter. Chaque ligne présente un défi spécifique et les approches recommandées pour le résoudre.
