@@ -46,7 +46,15 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 - Effectuer des vérifications à chaque étape
 
 ---
-# 🐧 Procédure d'Installation et Configuration de Samba sur Ubuntu pour Partage de Fichiers avec Windows Server 2022
+#### Sommaire  
+-  [Installation et preparation d'un serveur window 2022](#config-samba-ubuntu)
+-  [Installation et preparation d'un client ubuntu](#config-samba-ubuntu)
+-  [Installation du protocole SMB sur le serveur window 2022](#config-samba-ubuntu)
+-  [Configuration de Samba sur Ubuntu](#config-samba-ubuntu)
+-  [Installation et configuration du Logiciel John The Ripper](#config-samba-ubuntu)
+
+
+# <a name="config-samba-ubuntu"></a>🐧 Procédure d'Installation et Configuration de Samba sur Ubuntu pour Partage de Fichiers avec Windows Server 2022
 
 ## 🔧 Prérequis
 - Système Ubuntu 
