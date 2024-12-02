@@ -107,9 +107,9 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 ### Configuration IP statique
 - Ouvrez les paramètres réseau
 - Définissez une IP statique :
-  - IP : 192.168.56.10
+  - IP : 172.16.10.10
   - Masque : 255.255.255.0
-  - Passerelle : 192.168.56.1
+  - Passerelle : 172.16.10.1
   - DNS : 8.8.8.8
 
 ## Étape 4 : Installation d'Active Directory
