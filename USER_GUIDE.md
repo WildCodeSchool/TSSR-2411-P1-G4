@@ -47,11 +47,117 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 
 ---
 #### Sommaire  
--  [Installation et preparation d'un serveur window 2022](#config-samba-ubuntu)
+-  [Installation et preparation d'un serveur window 2022](#config-win-server)
 -  [Installation et preparation d'un client ubuntu](#config-samba-ubuntu)
 -  [Installation du protocole SMB sur le serveur window 2022](#config-samba-ubuntu)
 -  [Configuration de Samba sur Ubuntu](#config-samba-ubuntu)
 -  [Installation et configuration du Logiciel John The Ripper](#config-samba-ubuntu)
+
+
+# <a name="config-win-server"></a>Installation de Windows Server 2022 avec Active Directory et partage SMB
+
+## Prérequis
+- VirtualBox installé
+- ISO de Windows Server 2022
+- Minimum 4 Go de RAM
+- 50 Go d'espace disque
+
+## Étape 1 : Création de la machine virtuelle
+
+### Configuration initiale
+1. Ouvrez VirtualBox
+2. Cliquez sur "Nouvelle"
+3. Paramètres de base :
+   - Nom : `votreChoix`
+   - Type : Microsoft Windows
+   - Version : Windows 2022 (64-bit)
+
+### Configuration des ressources
+- Mémoire : 4096 Mo (4 Go)
+- Disque dur : Création d'un disque virtuel
+   - Type de fichier : VDI
+   - Allocation dynamique
+   - Taille : 50 Go
+
+## Étape 2 : Installation de Windows Server
+
+### Démarrage de l'installation
+1. Sélectionnez la VM
+2. Configurez le lecteur optique avec l'ISO
+3. Démarrez la machine
+
+### Processus d'installation
+- Sélectionnez "choisir Windows Server 2022 de votre choix"
+- Choisissez l'installation "Serveur avec interface graphique"
+- Acceptez les termes de licence
+- Sélectionnez "Installation personnalisée"
+- Formatez et installez sur le disque virtuel
+
+### Configuration initiale
+- Définissez un mot de passe administrateur fort
+- Configurez les paramètres réseau
+
+## Étape 3 : Configuration réseau VirtualBox
+
+### Adapter les interfaces réseau
+1. Paramètres de la VM → Réseau
+2. Carte 1 : NAT (accès Internet)
+3. Carte 2 : Réseau privé hôte
+
+### Configuration IP statique
+- Ouvrez les paramètres réseau
+- Définissez une IP statique :
+  - IP : 192.168.56.10
+  - Masque : 255.255.255.0
+  - Passerelle : 192.168.56.1
+  - DNS : 8.8.8.8
+
+## Étape 4 : Installation d'Active Directory
+
+### Ajout du rôle Active Directory
+1. Ouvrez le Gestionnaire de serveur
+2. Cliquez sur "Ajouter des rôles et fonctionnalités"
+3. Sélectionnez :
+   - Services de domaine Active Directory
+   - Serveur DNS
+
+### Promotion au contrôleur de domaine
+1. Cliquez sur "Promouvoir ce serveur en contrôleur de domaine"
+2. Créez une nouvelle forêt
+   - Nom de domaine : `monentreprise.local`
+3. Configurez les options DNS
+4. Suivez l'assistant jusqu'à la fin
+
+## Étape 5 : Configuration du partage SMB
+
+### Création de partages
+1. Ouvrez le Gestionnaire de serveur
+2. Ajoutez le rôle "Fichiers et services de stockage"
+3. Créez un nouveau volume sur un disque
+4. Configurez un nouveau partage :
+   - Chemin : `C:\Partages`
+   - Nom du partage : `Documents`
+   - Autorisations : Utilisateurs du domaine
+
+### Sécurisation du partage
+1. Configurez les autorisations NTFS
+2. Créez des groupes Active Directory
+3. Attribuez des droits de lecture/écriture
+
+## Étape 6 : Configuration du pare-feu
+- Autorisez les ports SMB (445)
+- Configurez les règles pour Active Directory
+
+## Dépannage courant
+- Vérifiez les configurations réseau
+- Assurez-vous que les services sont démarrés
+- Consultez les journaux d'événements
+
+## Recommandations de sécurité
+- Mettez à jour régulièrement
+- Utilisez des mots de passe complexes
+- Limitez les accès réseau
+
 
 
 # <a name="config-samba-ubuntu"></a>🐧 Procédure d'Installation et Configuration de Samba sur Ubuntu pour Partage de Fichiers avec Windows Server 2022
