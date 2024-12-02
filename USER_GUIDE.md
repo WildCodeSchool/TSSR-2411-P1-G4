@@ -48,7 +48,7 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 ---
 #### Sommaire  
 -  [Installation et preparation d'un serveur window 2022](#config-win-server)
--  [Installation et preparation d'un client ubuntu](#config-samba-ubuntu)
+-  [Installation et preparation d'un client ubuntu](#config-ubuntu)
 -  [Installation du protocole SMB sur le serveur window 2022](#config-samba-ubuntu)
 -  [Configuration de Samba sur Ubuntu](#config-samba-ubuntu)
 -  [Installation et configuration du Logiciel John The Ripper](#config-samba-ubuntu)
@@ -158,6 +158,85 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 - Utilisez des mots de passe complexes
 - Limitez les accès réseau
 
+
+
+# <a name="config-ubuntu"></a># Installation d'Ubuntu sur VirtualBox - Guide Complet
+
+## Prérequis
+- VirtualBox installé
+- Fichier ISO d'Ubuntu téléchargé
+- Ordinateur avec support de virtualisation activé
+
+## Étape 1 : Création de la Machine Virtuelle
+
+### Configuration initiale
+```bash
+1. Ouvrir VirtualBox
+2. Cliquer sur "Nouvelle"
+3. Nommer la machine virtuelle
+```
+
+### Paramètres recommandés
+- Type : Linux
+- Version : Ubuntu (64-bit)
+- Mémoire : Minimum 4 Go recommandés
+- Disque dur : Créer un disque virtuel maintenant
+
+## Étape 2 : Configuration du Disque Virtuel
+
+### Options de stockage
+- Type de fichier de disque dur : VDI
+- Allocation dynamique
+- Taille recommandée : 25-50 Go
+
+## Étape 3 : Configuration Réseau
+
+### Choix de l'adaptateur réseau
+- Mode pont recommandé
+- Permet une connexion internet complète
+- Affecte l'adressage IP de la VM
+
+## Étape 4 : Montage de l'ISO
+
+### Étapes de montage
+1. Sélectionner la VM
+2. Cliquer sur "Paramètres"
+3. Onglet "Stockage"
+4. Contrôleur IDE : Ajouter fichier ISO
+
+## Étape 5 : Lancement de l'installation
+
+### Démarrage
+1. Démarrer la VM
+2. Sélectionner "Installer Ubuntu"
+3. Choisir langue et disposition clavier
+
+## Étape 6 : Configuration système
+
+### Étapes principales
+- Sélectionner "Installation minimale"
+- Cocher "Télécharger les mises à jour"
+- Choisir "Effacer le disque et installer"
+
+## Étape 7 : Création utilisateur
+
+### Informations utilisateur
+- Nom complet
+- Nom d'utilisateur
+- Mot de passe
+- Configuration du système
+
+## Étape 8 : Finalisation
+
+### Post-installation
+```bash
+# Mettre à jour le système
+sudo apt update
+sudo apt upgrade
+```
+
+
+---
 
 
 # <a name="config-samba-ubuntu"></a>🐧 Procédure d'Installation et Configuration de Samba sur Ubuntu pour Partage de Fichiers avec Windows Server 2022
