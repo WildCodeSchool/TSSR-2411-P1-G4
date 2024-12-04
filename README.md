@@ -31,7 +31,7 @@ Tester la vulnérabilité d'un mot de passe de fichier zippé chiffré sur un se
 
 * **Récupération des hashes :** Utiliser des outils  pour extraire les hashes des comptes locaux du serveur.
 * **Lancement de l'attaque :** Exécuter John the Ripper ou Hashcat avec les hashes extraits et le dictionnaire.
-* **Analyse des résultats :** Évaluer la sécurité des comptes locaux en fonction des résultats de l'attaque.
+
 
  
 
@@ -58,9 +58,40 @@ Semaine 1
 
 | Difficultés | Solutions |
 |------------|-----------|
-| Installation de la VM Ubuntu bloquée | Augmenter la mémoire vive (RAM) dans les options de configuration de la machine virtuelle |
+| Installation de la VM Ubuntu bloquée | -Augmenter la mémoire vive (RAM) dans les options de configuration de la machine virtuelle |
 | Installation de Windows Server difficile | - Rechercher et utiliser des documentations et tutoriels détaillés<br>- Formation et acquisition de connaissances préalables<br>- Pratique et tests multiples |
 | Installation de John the Ripper | - Acquisition de connaissances sur le logiciel<br>- Étude des procédures d'installation<br>- Tests de plusieurs méthodes d'installation<br>- Consultation de documentation technique |
 | Partage de fichiers entre un client Linux et un serveur Windows | - Recherche de documentation sur les procédures de partage<br>- Étude des protocoles de transfert de fichiers<br>- Tests et configuration des paramètres de partage |
 
-Ce tableau récapitule les principales difficultés rencontrées lors du projet et propose des solutions concrètes pour les surmonter. Chaque ligne présente un défi spécifique et les approches recommandées pour le résoudre.
+ Semaine 2
+ 
+ | Difficultés | Solutions |
+ |------------|-----------|
+ | Attaque sur un compte Local | -Recherche et renseignement sur la procedure           |
+ 
+
+
+
+| Étape | Statut |
+|-------|--------|
+| Étapes du projet management | |
+| Établissement des rôles | OK |
+| Mise en place de la procédure | OK |
+| Réunions régulières pour suivi d'avancement | OK |
+| Concertation pour solutionner les problèmes | OK |
+| Documentation README | En cours |
+| Mise en application du projet | |
+| Utilisation et configuration de VirtualBox | OK |
+| Installation et configuration Windows Server 2022 | OK |
+| Recherche d'informations sur les processus inconnus | OK |
+| Adressage IP fixe et partage de fichiers | OK |
+| Installation et configuration du client Ubuntu | OK |
+| Adressage IP fixe et configuration de Samba pour partage de fichiers | OK |
+| Installation et configuration de John The Ripper | OK |
+| Documentation INSTALL et USER GUIDE | En cours |
+| Test d'application | OK |
+| Retour sur les problèmes rencontrés | OK |
+| Preparation d'une presentation de projet  | OK |
+| Mise en place de la quête bonus | En cours |
+| Fin et enjoy |:-) |
+
