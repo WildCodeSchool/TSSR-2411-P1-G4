@@ -49,7 +49,7 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 #### Sommaire  
 -  [Installation et preparation d'un serveur window 2022](#config-win-server)
 -  [Installation et preparation d'un client ubuntu](#config-ubuntu)
--  [Installation du protocole SMB sur le serveur window 2022](#config-samba-ubuntu)
+-  [Installation des adressage ip fixe et configuration reseau interne virtualbox](#config-samba-ubuntu)
 -  [Configuration de Samba sur Ubuntu](#config-samba-ubuntu)
 -  [Installation et configuration du Logiciel John The Ripper](#config-samba-ubuntu)
 
@@ -121,7 +121,7 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
    - Services de domaine Active Directory
    - Serveur DNS
 
-### Promotion au contrôleur de domaine
+### Promotion au contrôleur de domaine (non necessaire pour le projet)
 1. Cliquez sur "Promouvoir ce serveur en contrôleur de domaine"
 2. Créez une nouvelle forêt
    - Nom de domaine : `monentreprise.local`
