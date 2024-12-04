@@ -536,7 +536,7 @@ sudo apt upgrade
 sudo apt install snapd
 sudo snap install john-the-ripper
 ```
-
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/johnny/john%20.png)
 ### 3. Création d'un alias pour faciliter la procédure
 ```bash
 sudo snap alias john-the-ripper.zip2john zip2john 
