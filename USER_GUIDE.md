@@ -51,7 +51,7 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 -  [Installation et preparation d'un client ubuntu](#config-ubuntu)
 -  [Installation des adressage ip fixe et configuration reseau interne virtualbox](#config-samba-ubuntu)
 -  [Configuration de Samba sur Ubuntu](#config-samba-ubuntu)
--  [Installation et configuration du Logiciel John The Ripper](#config-samba-ubuntu)
+-  [Installation et configuration du Logiciel John The Ripper](#config-john-ubuntu)
 
 
 # <a name="config-win-server"></a>Installation de Windows Server 2022 avec Active Directory et partage SMB
@@ -519,3 +519,42 @@ hosts deny = ALL
 - Vérifier les logs : `sudo tail -f /var/log/samba/log.smbd`
 - Tester la connexion : `testparm`
 - Vérifier les ports ouverts : `sudo ss -tuln | grep -E ':139|:445'`
+
+  
+Voici la procédure d'installation de John The Ripper au format Markdown :
+
+# <a name="config-john-ubuntu"></a> Installation de John The Ripper
+
+### 1. Mise à jour du système
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
+### 2. Téléchargement et installation du logiciel
+```bash
+sudo apt install snapd
+sudo snap install john-the-ripper
+```
+
+### 3. Création d'un alias pour faciliter la procédure
+```bash
+sudo snap alias john-the-ripper.zip2john zip2john 
+```
+
+### 4. Conversion du fichier ZIP en hash
+```bash
+zip2john fichier_protege.zip > hash_zip.txt
+```
+
+### 5. Attaque par dictionnaire 
+```bash
+john --wordlist=/usr/share/wordlists/rockyou.txt hash_zip.txt
+```
+
+### 6. Affichage du mot de passe trouvé
+```bash
+john --show hash_zip.txt
+```
+
+**⚠️ Avertissement :** Utilisez ces commandes uniquement sur des fichiers dont vous êtes propriétaire. Le déchiffrement non autorisé est illégal et contraire à l'éthique.
