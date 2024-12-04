@@ -32,7 +32,6 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 
 ### 3. Commandes Techniques
 - Commandes shell/terminal
-- Scripts d'automatisation
 - Procédures de vérification et de test
 
 ## 🚀 Principes Directeurs
@@ -46,7 +45,8 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 - Effectuer des vérifications à chaque étape
 
 ---
-#### Sommaire  
+#### Sommaire 
+
 -  [Installation et preparation d'un serveur window 2022](#config-win-server)
 -  [Installation et preparation d'un client ubuntu](#config-ubuntu)
 -  [Installation des adressage ip fixe et configuration reseau interne virtualbox](#config-samba-ubuntu)
@@ -182,43 +182,15 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 - Mémoire : Minimum 4 Go recommandés
 - Disque dur : Créer un disque virtuel maintenant
 
-## Étape 2 : Configuration du Disque Virtuel
-
-### Options de stockage
-- Type de fichier de disque dur : VDI
-- Allocation dynamique
-- Taille recommandée : 25-50 Go
-
-## Étape 3 : Configuration Réseau
-
-### Choix de l'adaptateur réseau
-- Mode pont recommandé
-- Permet une connexion internet complète
-- Affecte l'adressage IP de la VM
-
-## Étape 4 : Montage de l'ISO
-
-### Étapes de montage
-1. Sélectionner la VM
-2. Cliquer sur "Paramètres"
-3. Onglet "Stockage"
-4. Contrôleur IDE : Ajouter fichier ISO
-
-## Étape 5 : Lancement de l'installation
+## Étape 1 : Lancement de l'installation
 
 ### Démarrage
 1. Démarrer la VM
 2. Sélectionner "Installer Ubuntu"
 3. Choisir langue et disposition clavier
 
-## Étape 6 : Configuration système
 
-### Étapes principales
-- Sélectionner "Installation minimale"
-- Cocher "Télécharger les mises à jour"
-- Choisir "Effacer le disque et installer"
-
-## Étape 7 : Création utilisateur
+## Étape 2 : Création utilisateur
 
 ### Informations utilisateur
 - Nom complet
