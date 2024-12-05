@@ -49,7 +49,7 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 
 -  [Installation et preparation d'un serveur window 2022](#config-win-server)
 -  [Installation et preparation d'un client ubuntu](#config-ubuntu)
--  [Installation des adressage ip fixe et configuration reseau interne virtualbox](#config-samba-ubuntu)
+-  [Installation des adressage ip fixe et configuration reseau interne virtualbox](#config-ip)
 -  [Configuration de Samba sur Ubuntu](#config-samba-ubuntu)
 -  [Installation et configuration du Logiciel John The Ripper](#config-john-ubuntu)
 
@@ -167,14 +167,12 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 - Fichier ISO d'Ubuntu téléchargé
 - Ordinateur avec support de virtualisation activé
 
-## Étape 1 : Création de la Machine Virtuelle
+## Création de la Machine Virtuelle
 
 ### Configuration initiale
-```bash
 1. Ouvrir VirtualBox
 2. Cliquer sur "Nouvelle"
 3. Nommer la machine virtuelle
-```
 
 ### Paramètres recommandés
 - Type : Linux
@@ -182,33 +180,91 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 - Mémoire : Minimum 4 Go recommandés
 - Disque dur : Créer un disque virtuel maintenant
 
-## Étape 1 : Lancement de l'installation
+## Lancement de l'installation
 
 ### Démarrage
 1. Démarrer la VM
 2. Sélectionner "Installer Ubuntu"
-3. Choisir langue et disposition clavier
 
 
-## Étape 2 : Création utilisateur
+# 🖥️ Installation d'Ubuntu
 
-### Informations utilisateur
-- Nom complet
-- Nom d'utilisateur
-- Mot de passe
-- Configuration du système
+## 🌐 Écran de démarrage
+L'écran d'installation d'Ubuntu apparaîtra.
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/ubuntu/Installation%20ubuntu%20Image1.png)
 
-## Étape 8 : Finalisation
+## 🌍 Choix de la langue
+Sélectionnez votre langue préférée.
 
-### Post-installation
-```bash
-# Mettre à jour le système
-sudo apt update
-sudo apt upgrade
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/ubuntu/Installation%20ubuntu%20Image3.png)
+
+## 🚀 Lancement de l'installation
+Choisissez l'option "Installer Ubuntu".
+
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/ubuntu/Installation%20ubuntu%20Image7.png)
+* ⌨️ **Clavier:** Sélectionnez votre disposition de clavier.
+
+* ![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/ubuntu/Installation%20ubuntu%20Image5.png)
+
+## 💽 Type d'installation
+* 🧭 **Installation guidée:** Recommandée pour la plupart des utilisateurs.
+* ⚙️ **Installation manuelle:** Pour un contrôle plus fin du partitionnement.
+  ![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/ubuntu/Installation%20ubuntu%20Image7.png)
+
+## 💾 Partitionnement
+Si vous optez pour une installation manuelle, vous devrez partitionner votre disque dur.
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/ubuntu/Installation%20ubuntu%20Image11.png)
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/ubuntu/Installation%20ubuntu%20Image16.png)
+
+## 🌍 Configuration régionale
+* ⏰ **Heure et localisation:** Configurez l'heure et la localisation.
+ ![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/ubuntu/Installation%20ubuntu%20Image7.png)
+
+
+## 👤 Création du compte utilisateur
+* 👥 **Nom d'utilisateur:** Choisissez un nom pour votre compte.
+* 🔐 **Mot de passe:** Créez un mot de passe sécurisé.
+* 💻 **Nom d'ordinateur:** Attribuez un nom à votre ordinateur.
+  ![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/ubuntu/Installation%20ubuntu%20Image14.png)
+
+## 🌐 Mise à jour du système
+* 📡 **Connexion Internet:** Assurez-vous d'être connecté à Internet.
+* 🔄 **Installation des mises à jour:** Ubuntu téléchargera et installera les dernières mises à jour.
+
+## 🔁 Redémarrage
+Une fois l'installation terminée, redémarrez votre ordinateur.
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/ubuntu/Installation%20ubuntu%20Image18.png)
 ```
 
 
 ---
+# <a name="config-ip"></a>Installation des adressage ip fixe et configuration reseau interne virtualbox
+
+## Modification du réseau VirtualBox en réseau interne
+
+### Étapes à suivre
+
+1. **Ouvrir les paramètres réseau de la machine virtuelle**
+   - Sélectionner la machine virtuelle
+   - Aller dans "Configuration"
+   - Choisir l'onglet "Réseau"
+
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/virtual/conf%20ip%20virual.png)
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/virtual/reseau%20virtu.png)
+
+2. **Changer le type de réseau**
+   - Sélectionner l'adaptateur souhaité
+   - Cocher "Activer l'adaptateur réseau"
+   - Dans le menu déroulant "Connecté à", choisir "Réseau interne"
+
+
+3. **Configurer le réseau interne**
+   - Dans le champ "Nom du réseau", saisir un nom (optionnel)
+   - Si aucun nom n'est spécifié, VirtualBox utilise "intnet" par défaut
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/virtual/reseau%20virt2.png)
+4. **Enregistrer les modifications**
+   - Cliquer sur "OK" pour valider les paramètres
+
 
 
 # <a name="config-samba-ubuntu"></a>🐧 Procédure d'Installation et Configuration de Samba sur Ubuntu pour Partage de Fichiers avec Windows Server 2022
