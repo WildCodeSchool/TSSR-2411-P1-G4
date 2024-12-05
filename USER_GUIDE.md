@@ -234,10 +234,8 @@ Si vous optez pour une installation manuelle, vous devrez partitionner votre dis
 ## 🔁 Redémarrage
 Une fois l'installation terminée, redémarrez votre ordinateur.
 ![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/ubuntu/Installation%20ubuntu%20Image18.png)
-```
 
 
----
 # <a name="config-ip"></a>Installation des adressage ip fixe et configuration reseau interne virtualbox
 
 ## Modification du réseau VirtualBox en réseau interne
@@ -264,6 +262,37 @@ Une fois l'installation terminée, redémarrez votre ordinateur.
 ![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/virtual/reseau%20virt2.png)
 4. **Enregistrer les modifications**
    - Cliquer sur "OK" pour valider les paramètres
+
+## Configuration d'une IP fixe sur Windows Server 2022
+
+### 1. Ouvrir les paramètres réseau
+- Cliquez sur le menu Démarrer
+- Sélectionnez "Paramètres"
+- Choisissez "Réseau et Internet"
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/ipconf/Config%20IP%20WS%201.png)
+### 2. Accéder aux propriétés de l'adaptateur
+- Cliquez sur "Propriétés du matériel et de la connexion"
+- Sélectionnez votre carte réseau
+- Cliquez sur "Propriétés de l'adaptateur"
+
+### 3. Configurer les paramètres IPv4
+- Faites un clic droit sur l'adaptateur réseau
+- Sélectionnez "Propriétés"
+- Choisissez "Protocole Internet version 4 (TCP/IPv4)"
+- Cliquez sur "Propriétés"
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/ipconf/Config%20IP%20WS%202.png)
+
+### 4. Saisir les informations réseau
+- Cochez "Utiliser l'adresse IP suivante"
+- Entrez :
+  * **Adresse IP**
+  * **Masque de sous-réseau**
+  * **Passerelle par défaut**
+  * **Serveurs DNS préférés et secondaires**
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/ipconf/Config%20IP%20WS%203.png)
+
+### 5. Valider la configuration
+- Cliquez sur "OK" pour enregistrer
 
 
 
