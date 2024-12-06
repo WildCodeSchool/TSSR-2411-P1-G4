@@ -634,21 +634,29 @@ john --show hash_zip.txt
 John the Ripper (JtR) est un outil open-source puissant de cracking de mots de passe utilisé principalement pour tester la robustesse des mots de passe.
 
 ## Modes de Fonctionnement Principaux
+Voici les trois modes principaux de John the Ripper :
 
-### Mode Automatique
-```bash
-john mot_de_passe.hash
-```
+1. **Mode Dictionnaire**
+   - Utilise une liste prédéfinie de mots de passe potentiels
+   - Charge des dictionnaires de mots courants, variantes, et combinaisons
+   - Rapide et efficace pour les mots de passe basés sur des mots réels
+   - Commande : `john --wordlist=mon_dictionnaire.txt hash_file`
 
-### Mode Dictionnaire
-```bash
-john --wordlist=dictionnaire.txt mot_de_passe.hash
-```
+2. **Mode Bruteforce (Incrémental)**
+   - Tente toutes les combinaisons possibles de caractères
+   - Commence par les combinaisons courtes et augmente progressivement
+   - Très long et intensif en calcul
+   - Teste absolument tous les caractères possibles
+   - Commande : `john --incremental hash_file`
 
-### Mode Bruteforce
-```bash
-john --incremental mot_de_passe.hash
-```
+3. **Mode Mask (Personnalisé)**
+   - Permet de définir des modèles précis de mots de passe
+   - Restreint la recherche à des structures spécifiques
+   - Combinaison puissante entre dictionnaire et bruteforce
+   - Exemple : `john --mask=?u?l?l?l?d?d` (majuscule, 3 min., 2 chiffres)
+   - Optimise le temps de recherche en ciblant des structures précises
+
+Chaque mode a ses avantages selon le type de hash et la stratégie de recherche.
 
 ## Formats de Hachage Supportés
 
