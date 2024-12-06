@@ -51,7 +51,7 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 -  [Installation et preparation d'un client ubuntu](#config-ubuntu)
 -  [Installation des adressage ip fixe et configuration reseau interne virtualbox](#config-ip)
 -  [Configuration de Samba sur Ubuntu](#config-samba-ubuntu)
--  [Installation et configuration du Logiciel John The Ripper](#config-john-ubuntu)
+-  [Installation et configuration du Logiciel John The Ripper+manuel d'utilisation](#config-john-ubuntu)
 
 
 # <a name="config-win-server"></a>Installation de Windows Server 2022 avec Active Directory et partage SMB
