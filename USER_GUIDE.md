@@ -71,6 +71,8 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
    - Nom : `votreChoix`
    - Type : Microsoft Windows
    - Version : Windows 2022 (64-bit)
+     
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/Capture%20d%E2%80%99%C3%A9cran%202024-11-26%20162526.png)
 
 ### Configuration des ressources
 - Mémoire : 4096 Mo (4 Go)
@@ -78,6 +80,9 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
    - Type de fichier : VDI
    - Allocation dynamique
    - Taille : 50 Go
+     
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/Capture%20d%E2%80%99%C3%A9cran%202024-11-26%20162552.png)
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/Capture%20d%E2%80%99%C3%A9cran%202024-11-26%20162621.png)
 
 ## Étape 2 : Installation de Windows Server
 
@@ -92,27 +97,18 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 - Acceptez les termes de licence
 - Sélectionnez "Installation personnalisée"
 - Formatez et installez sur le disque virtuel
+  
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/Capture%20d%E2%80%99%C3%A9cran%202024-11-25%20163634.png)
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/Capture%20d%E2%80%99%C3%A9cran%202024-11-25%20163740.png)
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/Capture%20d%E2%80%99%C3%A9cran%202024-11-25%20173032.png)
 
 ### Configuration initiale
 - Définissez un mot de passe administrateur fort
 - Configurez les paramètres réseau
 
-## Étape 3 : Configuration réseau VirtualBox
 
-### Adapter les interfaces réseau
-1. Paramètres de la VM → Réseau
-2. Carte 1 : NAT (accès Internet)
-3. Carte 2 : Réseau privé hôte
 
-### Configuration IP statique
-- Ouvrez les paramètres réseau
-- Définissez une IP statique :
-  - IP : 172.16.10.10
-  - Masque : 255.255.255.0
-  - Passerelle : 172.16.10.1
-  - DNS : 8.8.8.8
-
-## Étape 4 : Installation d'Active Directory
+## Étape 3 : Installation d'Active Directory
 
 ### Ajout du rôle Active Directory
 1. Ouvrez le Gestionnaire de serveur
@@ -128,7 +124,7 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 3. Configurez les options DNS
 4. Suivez l'assistant jusqu'à la fin
 
-## Étape 5 : Configuration du partage SMB
+## Étape 4 : Configuration du partage SMB
 
 ### Création de partages
 1. Ouvrez le Gestionnaire de serveur
@@ -144,7 +140,7 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 2. Créez des groupes Active Directory
 3. Attribuez des droits de lecture/écriture
 
-## Étape 6 : Configuration du pare-feu
+## Étape 5 : Configuration du pare-feu
 - Autorisez les ports SMB (445)
 - Configurez les règles pour Active Directory
 
