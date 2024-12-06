@@ -624,3 +624,60 @@ john --show hash_zip.txt
 ```
 
 **⚠️ Avertissement :** Utilisez ces commandes uniquement sur des fichiers dont vous êtes propriétaire. Le déchiffrement non autorisé est illégal et contraire à l'éthique.
+
+
+
+# Guide Utilisateur de John the Ripper
+
+## Introduction
+
+John the Ripper (JtR) est un outil open-source puissant de cracking de mots de passe utilisé principalement pour tester la robustesse des mots de passe.
+
+## Modes de Fonctionnement Principaux
+
+### Mode Automatique
+```bash
+john mot_de_passe.hash
+```
+
+### Mode Dictionnaire
+```bash
+john --wordlist=dictionnaire.txt mot_de_passe.hash
+```
+
+### Mode Bruteforce
+```bash
+john --incremental mot_de_passe.hash
+```
+
+## Formats de Hachage Supportés
+
+- MD5
+- SHA1
+- SHA256
+- Windows NTLM
+- Unix/Linux shadow
+- macOS
+- Kerberos
+- ZIP
+- PDF
+
+## Commandes Essentielles
+
+| Commande | Description |
+|----------|-------------|
+| `john --show` | Afficher les mots de passe crackés |
+| `john --format=raw-md5` | Spécifier un format de hash |
+| `john --max-length=8` | Limiter la longueur du mot de passe |
+
+## Bonnes Pratiques
+
+- Utilisez toujours avec autorisation
+- Ne crackez que vos propres systèmes
+- Respectez les aspects légaux et éthiques
+
+## Conseils de Sécurité
+
+- Utilisez des mots de passe complexes
+- Activez l'authentification à deux facteurs
+- Mettez à jour régulièrement vos systèmes
