@@ -79,7 +79,7 @@ Semaine 1
 | Mise en place de la procédure | OK |
 | Réunions régulières pour suivi d'avancement | OK |
 | Concertation pour solutionner les problèmes | OK |
-| Documentation README | En cours |
+| Documentation README | OK |
 | Mise en application du projet | |
 | Utilisation et configuration de VirtualBox | OK |
 | Installation et configuration Windows Server 2022 | OK |
@@ -88,10 +88,10 @@ Semaine 1
 | Installation et configuration du client Ubuntu | OK |
 | Adressage IP fixe et configuration de Samba pour partage de fichiers | OK |
 | Installation et configuration de John The Ripper | OK |
-| Documentation INSTALL et USER GUIDE | En cours |
+| Documentation INSTALL et USER GUIDE | OK |
 | Test d'application | OK |
 | Retour sur les problèmes rencontrés | OK |
 | Preparation d'une presentation de projet  | OK |
-| Mise en place de la quête bonus | En cours |
+| Mise en place de la quête bonus | ?? |
 | Fin et enjoy |:-) |
 
