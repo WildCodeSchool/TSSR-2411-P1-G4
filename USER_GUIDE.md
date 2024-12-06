@@ -101,6 +101,10 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 ![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/Capture%20d%E2%80%99%C3%A9cran%202024-11-25%20163634.png)
 ![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/Capture%20d%E2%80%99%C3%A9cran%202024-11-25%20163740.png)
 ![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/Capture%20d%E2%80%99%C3%A9cran%202024-11-25%20173032.png)
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/choix%20serv.png)
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/choix%20instal.png)
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/choix%20disq.png)
+
 
 ### Configuration initiale
 - Définissez un mot de passe administrateur fort
@@ -116,7 +120,12 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
 3. Sélectionnez :
    - Services de domaine Active Directory
    - Serveur DNS
-
+     
+![]( https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/servad.png)
+![]( https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/servad2.png)
+![]( https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/servad3.png)
+![]( https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/servad4.png)
+![]( https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/servad5.png)
 ### Promotion au contrôleur de domaine (non necessaire pour le projet)
 1. Cliquez sur "Promouvoir ce serveur en contrôleur de domaine"
 2. Créez une nouvelle forêt
@@ -134,15 +143,18 @@ Ce document vise à fournir une documentation exhaustive et détaillée couvrant
    - Chemin : `C:\Partages`
    - Nom du partage : `Documents`
    - Autorisations : Utilisateurs du domaine
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/ipconf/Windows-Server-2022-Creer-un-partage-SMB-Etape-1-800x273.png) 
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/ipconf/Windows-Server-2022-Creer-un-partage-SMB-Etape-2.png)
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/ipconf/Windows-Server-2022-Creer-un-partage-SMB-Etape-7.png )
 
 ### Sécurisation du partage
 1. Configurez les autorisations NTFS
 2. Créez des groupes Active Directory
 3. Attribuez des droits de lecture/écriture
-
-## Étape 5 : Configuration du pare-feu
-- Autorisez les ports SMB (445)
-- Configurez les règles pour Active Directory
+   
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/ipconf/Ajout%20Autor%201.png)
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/ipconf/Ajout%20Autor%202.png)
+![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/ipconf/Ajout%20Autor%203.png)
 
 ## Dépannage courant
 - Vérifiez les configurations réseau
@@ -266,6 +278,7 @@ Une fois l'installation terminée, redémarrez votre ordinateur.
 - Sélectionnez "Paramètres"
 - Choisissez "Réseau et Internet"
 ![](https://github.com/WildCodeSchool/TSSR-2411-P1-G4/blob/main/Pictures/window/ipconf/Config%20IP%20WS%201.png)
+
 ### 2. Accéder aux propriétés de l'adaptateur
 - Cliquez sur "Propriétés du matériel et de la connexion"
 - Sélectionnez votre carte réseau
