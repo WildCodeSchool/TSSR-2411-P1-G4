@@ -7,7 +7,7 @@ Je vais reformuler et améliorer le texte en markdown pour créer une introducti
 
 Ce document vise à fournir une documentation exhaustive et détaillée couvrant l'intégralité du processus d'installation et de configuration de notre projet. Il servira de référence technique pour :
 
-- 💻 L'installation des systèmes d'exploitation
+- 💻 L'installation des systèmes d'exploitation 
 - 🔧 La configuration des environnements logiciels
 - 📋 Les procédures pas à pas de déploiement
 - 🛠️ Les commandes essentielles pour une mise en œuvre réussie
